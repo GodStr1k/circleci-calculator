@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Calculator</title>
+<style>
+body{
+font-family: Arial;
+background-color: #f2f2f2;
+}
+.box{
+width:300px;
+margin:100px auto;
+padding:20px;
+background:white;
+border:1px solid #ccc;
+text-align:center;
+}
+input,button{
+width:90%;
+padding:8px;
+margin:5px;
+}
+#result{
+margin-top:15px;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h2>Calculator</h2>
+
+<input type="number" id="num1">
+<input type="number" id="num2">
+
+<button onclick="addNumbers()">Add</button>
+<button onclick="subtractNumbers()">Subtract</button>
+<button onclick="multiplyNumbers()">Multiply</button>
+
+<div id="result">Result:</div>
+</div>
+
+<script src="backend.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
